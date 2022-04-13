@@ -41,15 +41,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Components\CalculateScoring.cs" />
-    <Compile Include="Components\CreditReport.cs" />
-    <Compile Include="Components\GenerateCredit.cs" />
-    <Compile Include="Components\LoadData.cs" />
-    <Compile Include="Entities\Client.cs" />
-    <Compile Include="Entities\Interested.cs" />
-    <Compile Include="Entities\Seller.cs" />
+    <Compile Include="Components\Scoring.cs" />
+    <Compile Include="Components\Report.cs" />
+    <Compile Include="Components\Credit.cs" />
+    <Compile Include="Components\Data.cs" />
+    <Compile Include="Entities\CreditData.cs" />
     <Compile Include="Entities\Person.cs" />
-    <Compile Include="Facade\Financial.cs" />
+    <Compile Include="Facade\FinancialFacade.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup />
