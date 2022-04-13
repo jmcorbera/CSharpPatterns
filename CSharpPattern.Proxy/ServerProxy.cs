@@ -29,7 +29,7 @@ namespace CSharpPattern.Proxy
             }
             else
             {
-                Console.WriteLine("You are currently in an area that does not allow the download of the file.");
+                Console.WriteLine("You are currently in an area that does not allow the download of the file..");
             }
         }
 
