@@ -6,8 +6,8 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{C5E1F9AA-E6E8-4353-9511-53C8FAD9DF30}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>CSharpPatterns.Console</RootNamespace>
-    <AssemblyName>CSharpPatterns.Console</AssemblyName>
+    <RootNamespace>CSharpPatterns.AppConsole</RootNamespace>
+    <AssemblyName>CSharpPatterns.AppConsole</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,11 +43,24 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Clients\FinancialClient.cs" />
+    <Compile Include="Clients\TemplateMethodClient.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\CSharpPattern.Facade\CSharpPattern.Facade.csproj">
+      <Project>{EA705749-6686-4D92-8C65-D88241696467}</Project>
+      <Name>CSharpPattern.Facade</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CSharpPattern.Template\CSharpPattern.Template.csproj">
+      <Project>{92756A78-DFD6-43CB-9AED-3F9815463888}</Project>
+      <Name>CSharpPattern.Template</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
