@@ -17,6 +17,11 @@ namespace CSharpPatterns.AppConsole
             Console.ReadLine();
             Console.Clear();
 
+            CommandClient.MainCommand();
+
+            Console.ReadLine();
+            Console.Clear();
+
         }
     }
 }
