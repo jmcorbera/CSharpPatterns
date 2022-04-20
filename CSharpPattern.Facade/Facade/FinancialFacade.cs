@@ -64,6 +64,7 @@ namespace CSharpPattern.Facade.Facade
             {
                 Console.WriteLine("Credit generated successfully!!");
             }
+            else
             {
                 _credit.CreditRejected();
             }          
