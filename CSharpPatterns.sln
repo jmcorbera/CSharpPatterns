@@ -37,7 +37,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharpPattern.Template", "C
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharpPattern.Visitor", "CSharpPattern.Visitor\CSharpPattern.Visitor.csproj", "{D5D5D3D5-DC54-41C2-AA0C-E9446E948BDF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharpPatterns.Console", "CSharpPatterns.Console\CSharpPatterns.Console.csproj", "{C5E1F9AA-E6E8-4353-9511-53C8FAD9DF30}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharpPatterns.AppConsole", "CSharpPatterns.Console\CSharpPatterns.AppConsole.csproj", "{C5E1F9AA-E6E8-4353-9511-53C8FAD9DF30}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
