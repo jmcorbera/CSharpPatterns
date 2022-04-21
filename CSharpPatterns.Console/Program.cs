@@ -23,6 +23,10 @@ namespace CSharpPatterns.AppConsole
             Console.ReadLine();
             Console.Clear();
 
+            ChainOfResponsabilityClient.MainChainOfResponsability();
+            Console.ReadLine();
+            Console.Clear();
+
         }
     }
 }
