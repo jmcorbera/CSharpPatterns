@@ -43,6 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Clients\DecorateClient.cs" />
     <Compile Include="Clients\CommandClient.cs" />
     <Compile Include="Clients\FinancialClient.cs" />
     <Compile Include="Clients\TemplateMethodClient.cs" />
@@ -57,6 +58,10 @@
     <ProjectReference Include="..\CSharpPattern.Command\CSharpPattern.Command.csproj">
       <Project>{63B9E87B-912C-40D8-A7D7-5BBFCD1FAFFB}</Project>
       <Name>CSharpPattern.Command</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CSharpPattern.Decorate\CSharpPattern.Decorate.csproj">
+      <Project>{B9B0D71F-194F-4BC9-A1CD-70B94D961075}</Project>
+      <Name>CSharpPattern.Decorate</Name>
     </ProjectReference>
     <ProjectReference Include="..\CSharpPattern.Facade\CSharpPattern.Facade.csproj">
       <Project>{EA705749-6686-4D92-8C65-D88241696467}</Project>
