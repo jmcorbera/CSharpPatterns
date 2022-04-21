@@ -14,12 +14,20 @@ namespace CSharpPatterns.AppConsole.Clients
             Console.WriteLine("Client: I send a simple message with original implementation :");
             notifier.Send(msg);
 
+            ClientDecorateCode(notifier, msg, true, true);
+        }
+
+        private static void ClientDecorateCode(Notifier notifier, string msg, bool smsEnabled, bool FaceBookEnabled)
+        {
             Console.WriteLine("Client: I send several messages with decorator implementations :");
 
-            SMSNotifier smsNotifier = new SMSNotifier(notifier);
-            FaceBookNotifier faceBookNotifier = new FaceBookNotifier(smsNotifier);
+            if (smsEnabled)
+                notifier = new SMSNotifier(notifier);
 
-            faceBookNotifier.Send(msg);
+            if (FaceBookEnabled)
+                notifier = new FaceBookNotifier(notifier);
+
+            notifier.Send(msg);
         }
     }
 }
